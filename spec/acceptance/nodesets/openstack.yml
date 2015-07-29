@@ -1,0 +1,16 @@
+HOSTS:
+  test_node:
+    roles:
+      - master
+      - controlserver
+    platform: ubuntu-12.04-amd64
+    image: Ubuntu-12.04-x86_64
+    flavor: m1.medium
+    hypervisor: openstack
+CONFIG:
+  openstack_api_key: akshay123
+  openstack_username: akshay.bhandari
+  openstack_auth_url: http://10.43.2.3:5000/v2.0/tokens
+  openstack_tenant: "akshay bhandari"
+  openstack_network : Private_Network
+  openstack_keyname : beaker
